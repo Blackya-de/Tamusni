@@ -20,6 +20,9 @@ li{
   display: grid;
   grid-template-columns: 40% 60%;
 }
+.hamburger{
+  display: none;
+}
 a{
   font-size : 14px;
   color : #fff;
@@ -268,13 +271,4 @@ textarea{
   color: #eee;
   padding: 3px;
   border-color: #fadb3a;
-}
-@media screen and (max-width: 480px) {
-  .license{
-    background-color: green;
-  }
-  .semestre-x ul{
-    background-color: green;
-    display: block;
-  }
 }
