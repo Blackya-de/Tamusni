@@ -189,9 +189,9 @@ a{
   padding: 10px;
   padding-top: 10px;
   margin-top: 20px;
-  background-color: #fadb4a;
+  background-color: #fadb5a;
   width: 250px;
-  height: 120px;
+  height: 140px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -203,6 +203,9 @@ a{
   width: 250px;
   padding: 10px;
   text-align: center;
+}
+.contribution img{
+  margin-top: 30px;
 }
 /*------------------------------------------------------------*/
 

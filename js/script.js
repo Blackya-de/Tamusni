@@ -6,11 +6,11 @@ let speed = 300
 writeText()
 
 function writeText() {
-    textEl.innerText = text.slice(0, idx)
+  textEl.innerText = text.slice(0, idx)
 
-    idx++
+  idx++
 
-    setTimeout(writeText, speed)
+  setTimeout(writeText, speed)
 }
 
 
@@ -21,17 +21,17 @@ window.addEventListener('scroll', checkBoxes)
 checkBoxes()
 
 function checkBoxes() {
-    const triggerBottom = window.innerHeight / 5 * 4
+  const triggerBottom = window.innerHeight / 5 * 4
 
-    boxes.forEach(box => {
-        const boxTop = box.getBoundingClientRect().top
+  boxes.forEach(box => {
+    const boxTop = box.getBoundingClientRect().top
 
-        if(boxTop < triggerBottom) {
-            box.classList.add('show')
-        } else {
-            box.classList.remove('show')
-        }
-    })
+    if(boxTop < triggerBottom) {
+        box.classList.add('show')
+    } else {
+        box.classList.remove('show')
+    }
+  })
 }
 
 

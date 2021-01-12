@@ -24,17 +24,13 @@ header{
   margin: 5px;
 }
 .nav-bar{
-  background: #141414;
-  position: fixed;
-  top: 0;
-  width: 100%;
+  display: flex;
 }
 .hamburger{
-  position: fixed;
+  margin-left: auto;
   padding: 8px;
   cursor: pointer;
   z-index: 2;
-  right: 2%;
 }
 .nav-bar-menu{
   position: fixed;
@@ -103,8 +99,6 @@ header{
 .nav-bar h2{
   color : #FADB3A;
   padding : 8px;
-  position: fixed;
-  left: 2%;
 }
 /*--------------------------------------------*/
 .about-us{
@@ -222,7 +216,7 @@ header{
   margin-top: 20px;
   background-color: #fadb4a;
   width: 250px;
-  height: 120px;
+  height: 140px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -234,6 +228,9 @@ header{
   width: 250px;
   padding: 10px;
   text-align: center;
+}
+.contribution img{
+  margin-top: 30px;
 }
 /*------------------------------------------------------------*/
 .contact-us{
