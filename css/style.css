@@ -5,7 +5,7 @@
 }
 header{
   background-color : #141414;
-  height : 600px;
+  height : 100vh;
 }
 ul{
   list-style: none;
@@ -32,8 +32,16 @@ a{
 .nav-bar-menu{
   text-align: center;
 }
+#text-2{
+  font-size: 25px;
+  letter-spacing: 4px;
+  text-align: center;
+  color: #fabd1a;
+  padding: 5px;
+  margin-bottom: 8px;
+}
 .nav-bar h2{
-  color : #FADB3A;
+  color : #FABD3A;
   padding : 8px;
 }
 .row{
@@ -50,7 +58,7 @@ a{
 }
 .header-info h1{
   font-family : nunito;
-  color: #FADB3A;
+  color: #FAbd3A;
   font-size : 2cm;
   font-weight: 100;
   letter-spacing: 0.2cm;
@@ -65,21 +73,27 @@ a{
 .btn{
   margin-top:1cm;
   padding : 2px;
-  border:1px solid #4D73FE;
-  color: white;
+  background-color: #fadb2a;
+  border:1px solid #fadb2a;
+  color: #141414;
   text-align: center;
   width : 250px;
   transform: translate(10px 10px);
 }
+.btn a{
+  color: #141414;
+}
 .btn:active,
 .btn:hover{
-    background-color: #fadb3a;
+  color: #141414;
+  background-color: #fabd1a;
+  border: 1px solid #fabd1a;
 }
 
 /*-----------------------------------------------*/
 .about-us{
   height: 500px;
-  background-color: #fadb3a;
+  background-color: #fabd3a;
 }
 .about-us h1{
   padding: 2cm;
@@ -104,7 +118,7 @@ a{
 }
 .license h1{
   font-family: Helvetica;
-  color: #fadb3a;
+  color: #FABD3A;
   text-align: center;
   padding: 20px;
   font-weight: lighter;
@@ -136,7 +150,7 @@ a{
   transform: translateX(0);
 }
 .semestre-x h2{
-  color: #fadb3a;
+  color: #fabd3a;
   text-align: center;
   padding: 10px;
 }
@@ -153,7 +167,7 @@ a{
 }
 /*----------------------------------------------------*/
 .contribution{
-  background-color: #fadb3a;
+  background-color: #fabd3a;
   height: 500px;
   display: flex;
   flex-direction: column;
@@ -178,18 +192,19 @@ a{
   text-align: center;
 }
 .contribution h2{
-  color: #4D73FE;
+  color: Dodgerblue;
   text-align: center;
-  font-weight: 100;
+  font-weight: 200;
   font-size: 25px;
   letter-spacing: 1px;
   margin-bottom: 15px;
+  padding-left: 8px;
 }
 .contribution-box{
   padding: 10px;
   padding-top: 10px;
   margin-top: 20px;
-  background-color: #fadb5a;
+  background-color: #fabd5a;
   width: 250px;
   height: 140px;
   display: flex;
@@ -198,7 +213,7 @@ a{
 }
 .contribution a{
   margin:0;
-  color: #fadb3a;
+  color: #fabd3a;
   background-color: #141414;
   width: 250px;
   padding: 10px;
@@ -207,6 +222,9 @@ a{
 .contribution img{
   margin-top: 30px;
 }
+.fa-text{
+  display: flex;
+}
 /*------------------------------------------------------------*/
 
 .contact-us{
@@ -214,7 +232,7 @@ a{
   height: 520px;
 }
 .contact-us h1{
-  color: #fadb3a;
+  color: #fabd3a;
   text-align: center;
   padding: 20px;
   font-weight: 100;
@@ -255,17 +273,17 @@ a{
   background: none;
   display: block;
   margin:20px auto;
-  border-bottom: 1px solid #fadb3a;
+  border-bottom: 1px solid #FABD3A;
   padding:14px 10px;
   width:250px;
   outline:none;
   color: #fff;
 }
 .box input[type="submit"]{
-  background-color: #fadb3a;
+  background-color: #FABD3A;
   color: #141414;
   padding: 2px;
-  border: 1px solid #fadb3a;
+  border: 1px solid #FABD3A;
   padding:10px 60px;
   margin-top: 25px;
 }
@@ -273,5 +291,22 @@ textarea{
   background-color: #202020;
   color: #eee;
   padding: 3px;
-  border-color: #fadb3a;
+  border-color: #FABD3A;
+}
+/*----------------------------------------------------------*/
+footer{
+  border-top:1px solid #fabd2a;
+  padding: 20px;
+  background-color: #141414;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer p{
+  color: #606060;
+  padding: 10px;
+}
+.footer-icons li{
+  padding: 8px;
 }

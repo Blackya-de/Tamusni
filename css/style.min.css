@@ -20,7 +20,7 @@ header{
 .line{
   width: 30px;
   height: 3px;
-  background: #fadb3a;
+  background: #FABD3A;
   margin: 5px;
 }
 .nav-bar{
@@ -34,7 +34,7 @@ header{
 }
 .nav-bar-menu{
   position: fixed;
-  background-color: #fadb3a;
+  background-color: #FABD3A;
   width: 100%;
   height: 100vh;
   top: 0;
@@ -42,20 +42,39 @@ header{
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  clip-path: circle(50px at 90% -10%);
-  -webkit-clip-path: circle(50px at 90% -10%);
+  clip-path: circle(10px at 90% -10%);
+  -webkit-clip-path: circle(10px at 90% -10%);
   transition: all 1s ease-out;
 }
 .line.open{
   background: #141414;
+  transition: transform 0.4s ease-out;
 }
 .nav-bar-menu.open{
   clip-path: circle(1100px at 90% -10%);
   -webkit-clip-path: circle(1100px at 90% -10%);
 }
+.nav-bar-menu a{
+  color: #141414;
+}
 .nav-bar-menu li{
   padding: 20px;
   text-align: center;
+}
+.nav-bar-menu a:active,
+.nav-bar-menu a:hover{
+  padding: 2px;
+  border-bottom: 1px solid #141414;
+  font-weight: bold;
+}
+
+#text-2{
+  font-size: 25px;
+  letter-spacing: 4px;
+  text-align: center;
+  color: #fabd1a;
+  padding: 5px;
+  margin-bottom: 8px;
 }
 .row{
   display : flex;
@@ -71,7 +90,7 @@ header{
 }
 .header-info h1{
   font-family : nunito;
-  color: #FADB3A;
+  color: #FABD3A;
   font-size : 50px;
   font-weight: 100;
   letter-spacing: 0.2cm;
@@ -86,24 +105,31 @@ header{
 .btn{
   margin-top:1cm;
   padding : 2px;
-  border:1px solid #4D73FE;
-  color: white;
   text-align: center;
   width : 250px;
-  transform: translate(10px 10px);
 }
 .btn:active,
 .btn:hover{
-    background-color: #fadb3a;
+    background-color: #FABD3A;
 }
 .nav-bar h2{
-  color : #FADB3A;
+  color : #FAbd2A;
   padding : 8px;
+}
+.btn{
+  background-color: #fadb1a;
+  border: 1px solid #fadb1a;
+}
+.btn:active,
+.btn:hover{
+    background-color: #fabd2a;
+    border: 1px solid #fadb2a;
+    color: #141414;
 }
 /*--------------------------------------------*/
 .about-us{
   height: auto;
-  background-color: #fadb3a;
+  background-color: #FABD3A;
   padding-bottom: 100px;
 }
 .about-us h1{
@@ -130,7 +156,7 @@ header{
 }
 .license h1{
   font-family: Helvetica;
-  color: #fadb3a;
+  color: #FABD3A;
   text-align: center;
   padding: 20px;
   font-weight: lighter;
@@ -160,7 +186,7 @@ header{
   transform: translateX(0);
 }
 .semestre-x h2{
-  color: #fadb3a;
+  color: #FABD3A;
   text-align: center;
   padding: 10px;
 }
@@ -177,7 +203,7 @@ header{
 }
 /*----------------------------------------------------*/
 .contribution{
-  background-color: #fadb3a;
+  background-color: #FABD3A;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -214,7 +240,7 @@ header{
   padding: 10px;
   padding-top: 10px;
   margin-top: 20px;
-  background-color: #fadb4a;
+  background-color: #fabd5a;
   width: 250px;
   height: 140px;
   display: flex;
@@ -223,7 +249,7 @@ header{
 }
 .contribution a{
   margin:0;
-  color: #fadb3a;
+  color: #FABD3A;
   background-color: #141414;
   width: 250px;
   padding: 10px;
@@ -239,7 +265,7 @@ header{
   padding-bottom: 80px;
 }
 .contact-us h1{
-  color: #fadb3a;
+  color: #FABD3A;
   text-align: center;
   padding: 20px;
   font-weight: 100;
@@ -280,17 +306,17 @@ header{
   background: none;
   display: block;
   margin:20px auto;
-  border-bottom: 1px solid #fadb3a;
+  border-bottom: 1px solid #FABD3A;
   padding:14px 10px;
   width:80%;
   outline:none;
   color: #fff;
 }
 .box input[type="submit"]{
-  background-color: #fadb3a;
+  background-color: #FABD3A;
   color: #141414;
   padding: 2px;
-  border: 1px solid #fadb3a;
+  border: 1px solid #FABD3A;
   padding:10px 60px;
   margin-top: 25px;
 }
@@ -298,6 +324,25 @@ textarea{
   background-color: #202020;
   color: #eee;
   padding: 3px;
-  border-color: #fadb3a;
+  border-color: #FABD3A;
   width: 80%;
+}
+/*----------------------------------------------------------*/
+footer{
+  border-top:1px solid #fabd2a;
+  padding: 10px;
+  background-color: #141414;
+}
+footer p{
+  color: #606060;
+  text-align: center;
+  font-size: 13px;
+  padding: 8px;
+}
+.footer-icons ul{
+  display: flex;
+  justify-content: center;
+}
+.footer-icons li{
+  padding: 8px;
 }

@@ -37,12 +37,11 @@ function checkBoxes() {
 
 const hamburger = document.querySelector('.hamburger');
 const nav_bar_menu = document.querySelector('.nav-bar-menu');
-const links = document.querySelectorAll('.nav-bar-menu li');
-const lines = document.querySelector('.line');
+const lines = document.querySelectorAll('.line');
 
 hamburger.addEventListener('click', ()=>{
   nav_bar_menu.classList.toggle("open");
-  lines.forEach(line =>{
+  lines.forEach(line => {
     line.classList.toggle("open");
-  })
+  });
 })
