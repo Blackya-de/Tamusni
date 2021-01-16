@@ -32,6 +32,12 @@ a{
 .nav-bar-menu{
   text-align: center;
 }
+.nav-bar-menu a:active,
+.nav-bar-menu a:hover{
+  color: #fabd2a;
+  font-size: bold;
+  border-bottom: 1px solid #fabd2a;
+}
 #text-2{
   font-size: 25px;
   letter-spacing: 4px;
@@ -143,16 +149,32 @@ a{
   transform: translateX(-400%);
   transition: transform 0.8s ease;
 }
+.semestre-x h2{
+  color: #141414;
+  text-align: center;
+  padding: 10px;
+  background-color: #fabd2a;
+  width: 530px;
+  text-align: center;
+}
+.semestre_x a:active,
+.semestre-x a:active{
+  font-weight: bold;
+  color: #fabd2a;
+}
+#cross{
+  font-size: 40px;
+  color: red;
+}
+#checkmark{
+  font-size: 20px;
+  color: green;
+}
 .semestre-r.show{
   transform: translateX(0);
 }
 .semestre-l.show{
   transform: translateX(0);
-}
-.semestre-x h2{
-  color: #fabd3a;
-  text-align: center;
-  padding: 10px;
 }
 .semestre-x ul{
   padding:3cm;
@@ -165,7 +187,24 @@ a{
   color: #fff;
   display: list-item;
 }
+span{
+  color: #fabd2a;
+  font-size: 16px;
+}
 /*----------------------------------------------------*/
+.master{
+  background-color: #141414;
+  height: 580px;
+}
+.master h1{
+  font-family: Helvetica;
+  color: #FABD3A;
+  text-align: center;
+  padding: 20px;
+  font-weight: lighter;
+  font-size: 38px;
+  letter-spacing: 1px;
+}
 .contribution{
   background-color: #fabd3a;
   height: 500px;

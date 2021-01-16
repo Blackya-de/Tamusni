@@ -1,5 +1,7 @@
 const textEl = document.getElementById('text')
+const logoTxt = document.getElementById('logo')
 const text = 'Tamusni'
+const logo = 'ⵜⴰⵎⵓⵙⵏⵉ'
 let idx = 1
 let speed = 300
 
@@ -12,7 +14,6 @@ function writeText() {
 
   setTimeout(writeText, speed)
 }
-
 
 const boxes = document.querySelectorAll('.semestre-r,.semestre-l')
 

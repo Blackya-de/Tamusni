@@ -30,7 +30,7 @@ header{
   margin-left: auto;
   padding: 8px;
   cursor: pointer;
-  z-index: 2;
+  z-index: 4;
 }
 .nav-bar-menu{
   position: fixed;
@@ -45,6 +45,7 @@ header{
   clip-path: circle(10px at 90% -10%);
   -webkit-clip-path: circle(10px at 90% -10%);
   transition: all 1s ease-out;
+  z-index: 3;
 }
 .line.open{
   background: #141414;
@@ -60,6 +61,7 @@ header{
 .nav-bar-menu li{
   padding: 20px;
   text-align: center;
+  height: auto;
 }
 .nav-bar-menu a:active,
 .nav-bar-menu a:hover{
@@ -152,7 +154,12 @@ header{
 /*-----------------------------------------------*/
 .license{
   background-color: #141414;
+  width: 100%;
   height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 .license h1{
   font-family: Helvetica;
@@ -167,9 +174,15 @@ header{
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  width: auto;
 }
 .semestre-x a{
   color: #fff;
+}
+.semestre-x a:active,
+.semestre-x a:hover{
+  color: #fabd2a;
 }
 .semestre-r{
   transform: translateX(400%);
@@ -201,7 +214,30 @@ header{
   color: #fff;
   display: list-item;
 }
+span{
+  color: #fabd2a;
+  font-size: 15px;
+}
+
 /*----------------------------------------------------*/
+.master{
+  background-color: #141414;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.master h1{
+  font-family: Helvetica;
+  color: #FABD3A;
+  text-align: center;
+  padding: 20px;
+  font-weight: lighter;
+  font-size: 38px;
+  letter-spacing: 1px;
+}
+/*-----------------------------------------------------*/
 .contribution{
   background-color: #FABD3A;
   height: auto;
