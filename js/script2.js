@@ -1,4 +1,4 @@
-const allblocs = document.querySelectorAll(".semestre-x");
+const allblocs = document.querySelectorAll(".semestre-t");
 
 
 allblocs.forEach(bloc => {
