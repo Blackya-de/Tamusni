@@ -1,7 +1,6 @@
 *{
   margin : 0;
   padding : 0;
-  overflow-x: hidden;
 }
 h2,p,h1,a{
   font-family: 'Nunito', sans-serif;
@@ -80,7 +79,6 @@ a{
   display : grid;
   grid-template-columns : 50% 50%;
   padding-top: 100px;
-  margin-top : 2cm;
 }
 .header-info{
   padding : 1cm;

@@ -46,3 +46,17 @@ hamburger.addEventListener('click', ()=>{
     line.classList.toggle("open");
   });
 })
+
+
+/*-----------------------------swiper*/
+var mySwiper = new Swiper('.swiper-container', {
+
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+
+})

@@ -1,272 +1,305 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css" media="screen and (min-width:700px)">
-    <link rel="stylesheet" href="css/style.min.css" media="screen and (max-width:700px)">
-    <link rel="stylesheet" href="css/swiper.css">
-    <link rel="stylesheet" href="css/swiper.min.css">
-    <script src="https://kit.fontawesome.com/1c84e8a5c3.js" crossorigin="anonymous"></script>
-    <title>Tamusni</title>
-  </head>
-  <body>
-    <header>
-      <div class="nav-bar-bg">
-        <div class="nav-bar">
-          <div class ="logo">
-            <a href="#">ⵜⴰⵎⵓⵙⵏⵉ</a>
-          </div>
-          <div class="hamburger">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-          </div>
-          <div class="nav-bar-menu">
-            <ul>
-              <li><a href="#">License1</a></li>
-              <li><a href="#">License2</a></li>
-              <li><a href="#">License3</a></li>
-              <li><a href="#">Master1</a></li>
-              <li><a href="#">Master2</a></li>
-              <li><a href="#">Contribution</a></li>
-            </ul>
-          </div>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" media="screen and (min-width:700px)">
+  <link rel="stylesheet" href="css/style.min.css" media="screen and (max-width:700px)">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <script src="https://kit.fontawesome.com/1c84e8a5c3.js" crossorigin="anonymous"></script>
+  <title>Tamusni</title>
+</head>
+
+<body>
+  <header>
+    <div class="nav-bar-bg">
+      <div class="nav-bar">
+        <div class="logo">
+          <a href="#">ⵜⴰⵎⵓⵙⵏⵉ</a>
         </div>
-      </div>
-      <div class="row">
-        <div class="header-info">
-          <div class="header-info-desc">
-            <h1 id="text"></h1>
-            <h3 id="text-2">ⵜⴰⵎⵓⵙⵏⵉ</h3>
-          </div>
-          <p>Le companion de l'étudiant en informatique ,Un site plein de ressources.</p>
-          <div class="btn">
-            <a href="#">Contribute</a>
-          </div>
+        <div class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
         </div>
-        <div class="header-img">
-          <img src="img/computer.svg" width="80%">
-        </div>
-      </div>
-    </header>
-    <section class="about-us">
-      <h1>Tamusni c'est qoui ?</h1>
-      <p>Une plate-forme qui contients des cours, examens,
-        exercices TD et TP pour les étudiant du département informatique de l'univérsité Mouloud MAMMERI Tizi-ouzou</p>
-    </section>
-    <section class="license">
-      <h1>License1</h1>
-      <div class="row-2">
-        <div class="semestre-x semestre-l">
-          <a href="#"><h2>Semestre 1</h2></a>
+        <div class="nav-bar-menu">
           <ul>
-            <li><span>&bull;</span><a href="#">Analyse 1</a></li>
-            <li><span>&bull;</span><a href="#">Algébre 1</a></li>
-            <li><span>&bull;</span><a href="#">Algorithmique et structure des données 1</a></li>
-            <li><span>&bull;</span><a href="#">Structure Machine 1</a></li>
-            <li><span>&bull;</span><a href="#">ECS</a></li>
-            <li><span>&bull;</span><a href="#">Langue Étrangére 1</a></li>
-            <li><span>&bull;</span><a href="#">Francais</a></li>
-          </ul>
-        </div>
-        <div class="semestre-x semestre-r">
-          <a href="#"><h2>Semestre 2</h2></a>
-          <ul>
-            <li><span>&bull;</span><a href="#">Analyse 2</a></li>
-            <li><span>&bull;</span><a href="#">Algébre 2</a></li>
-            <li><span>&bull;</span><a href="#">Algorithmique et structure des données 2</a></li>
-            <li><span>&bull;</span><a href="#">Structure Machine 2</a></li>
-            <li><span>&bull;</span><a href="#">Probabilité et Statistique</a></li>
-            <li><span>&bull;</span><a href="#">Outils de programmation Mathématique</a></li>
-            <li><span>&bull;</span><a href="#">TIC</a></li>
+            <li><a href="#">License1</a></li>
+            <li><a href="#">License2</a></li>
+            <li><a href="#">License3</a></li>
+            <li><a href="#">Master1</a></li>
+            <li><a href="#">Master2</a></li>
+            <li><a href="#">Contribution</a></li>
           </ul>
         </div>
       </div>
-    </section>
-    <section class="license">
-      <h1>License 2</h1>
-      <div class="row-2">
-        <div class="semestre-x semestre-l">
-          <a href="#"><h2>Semestre 3</h2></a>
-          <ul>
-            <li><span>&bull;</span><a href="#">Algorithmique et structure des données</a></li>
-            <li><span>&bull;</span><a href="#">Architecture des ordinateurs</a></li>
-            <li><span>&bull;</span><a href="#">Systéme d'information</a></li>
-            <li><span>&bull;</span><a href="#">Théorie des graphes</a></li>
-            <li><span>&bull;</span><a href="#">Méthodes Numériques</a></li>
-            <li><span>&bull;</span><a href="#">Logique Mathématique</a></li>
-            <li><span>&bull;</span><a href="#">Langue Étrangére 2</a></li>
-          </ul>
+    </div>
+    <div class="row">
+      <div class="header-info">
+        <div class="header-info-desc">
+          <h1 id="text"></h1>
+          <h3 id="text-2">ⵜⴰⵎⵓⵙⵏⵉ</h3>
         </div>
-        <div class="semestre-x semestre-r">
-          <a href="#"><h2>Semestre 4 </h2></a>
-          <ul>
-            <li><span>&bull;</span><a href="#">Théorie des languages</a></li>
-            <li><span>&bull;</span><a href="#">Systéme d'éxploitation 1</a></li>
-            <li><span>&bull;</span><a href="#">Base de données</a></li>
-            <li><span>&bull;</span><a href="#">Réseaux</a></li>
-            <li><span>&bull;</span><a href="#">Programmation orienté objet</a></li>
-            <li><span>&bull;</span><a href="#">Dévelopement d'Application Web</a></li>
-            <li><span>&bull;</span><a href="#">Langue Étrangére 3</a></li>
-          </ul>
+        <p>Le companion de l'étudiant en informatique ,Un site plein de ressources.</p>
+        <div class="btn">
+          <a href="#">Contribute</a>
         </div>
       </div>
-    </section>
-    <section class="license">
-      <h1>License 3</h1>
-      <div class="row-2">
-        <div class="semestre-x semestre-l">
-          <a href="#"><h2>Semestre 5</h2></a>
-          <ul>
-            <li><span>&bull;</span><a href="#">Systéme d'éxploitation 2</a></li>
-            <li><span>&bull;</span><a href="#">Compilation</a></li>
-            <li><span>&bull;</span><a href="#">Génie logiciel</a></li>
-            <li><span>&bull;</span><a href="#">Interface Homme-Machine</a></li>
-            <li><span>&bull;</span><a href="#">Économie numérique et veille stratégique</a></li>
-            <li><span>&bull;</span><a href="#">Programmation linéaire</a></li>
-            <li><span>&bull;</span><a href="#">Probabilités Statistique</a></li>
-          </ul>
-        </div>
-        <div class="semestre-x semestre-r">
-          <a href="#"><h2>Semestre 6</h2></a>
-          <ul>
-            <li><span>&bull;</span><a href="#">Application Mobile</a></li>
-            <li><span>&bull;</span><a href="#">Sécurité informatique</a></li>
-            <li><span>&bull;</span><a href="#">Intelligence artificielle</a></li>
-            <li><span>&bull;</span><a href="#">Domaine semi-structurées</a></li>
-            <li><span>&bull;</span><a href="#">Projet</a></li>
-            <li><span>&bull;</span><a href="#">Rédaction scientifique</a></li>
-            <li><span>&bull;</span><a href="#">Créer et développer une startup</a></li>
-          </ul>
-        </div>
+      <div class="header-img">
+        <img src="img/computer.svg" width="80%">
       </div>
-    </section>
-    <section class="master-t">
-      <div class="container semestre-l" id="Master1">
-        <h1>Master 1</h1>
-          <div class="semestre-t active">
-            <h2>Semestre 1</h2>
-            <ul>
-              <li><span>&bull;</span><a href="#">Systéme d'éxploitation 2</a></li>
-              <li><span>&bull;</span><a href="#">Compilation</a></li>
-              <li><span>&bull;</span><a href="#">Génie logiciel</a></li>
-              <li><span>&bull;</span><a href="#">Interface Homme-Machine</a></li>
-              <li><span>&bull;</span><a href="#">Économie numérique et veille stratégique</a></li>
-              <li><span>&bull;</span><a href="#">Programmation linéaire</a></li>
-              <li><span>&bull;</span><a href="#">Probabilités Statistique</a></li>
-            </ul>
-          </div>
-          <div class="semestre-t">
-            <h2>Semestre 3</h2>
-            <ul>
-              <li><span>&bull;</span><a href="#">Systéme d'éxploitation 2</a></li>
-              <li><span>&bull;</span><a href="#">Compilation</a></li>
-              <li><span>&bull;</span><a href="#">Génie logiciel</a></li>
-              <li><span>&bull;</span><a href="#">Interface Homme-Machine</a></li>
-              <li><span>&bull;</span><a href="#">Économie numérique et veille stratégique</a></li>
-              <li><span>&bull;</span><a href="#">Programmation linéaire</a></li>
-              <li><span>&bull;</span><a href="#">Probabilités Statistique</a></li>
-            </ul>
-          </div>
-        </div>
-        </div>
-      </div>
-    </section>
-    <section class="master-t">
-      <div class="container semestre-l" id="Master2">
-          <h1>Master 1</h1>
-          <div class="semestre-t active">
-            <h2>Semestre 1</h2>
-            <ul>
-              <li><span>&bull;</span><a href="#">Systéme d'éxploitation 2</a></li>
-              <li><span>&bull;</span><a href="#">Compilation</a></li>
-              <li><span>&bull;</span><a href="#">Génie logiciel</a></li>
-              <li><span>&bull;</span><a href="#">Interface Homme-Machine</a></li>
-              <li><span>&bull;</span><a href="#">Économie numérique et veille stratégique</a></li>
-              <li><span>&bull;</span><a href="#">Programmation linéaire</a></li>
-              <li><span>&bull;</span><a href="#">Probabilités Statistique</a></li>
-            </ul>
-          </div>
-          <div class="semestre-t">
-            <h2>Semestre 3</h2>
-            <ul>
-              <li><span>&bull;</span><a href="#">Systéme d'éxploitation 2</a></li>
-              <li><span>&bull;</span><a href="#">Compilation</a></li>
-              <li><span>&bull;</span><a href="#">Génie logiciel</a></li>
-              <li><span>&bull;</span><a href="#">Interface Homme-Machine</a></li>
-              <li><span>&bull;</span><a href="#">Économie numérique et veille stratégique</a></li>
-              <li><span>&bull;</span><a href="#">Programmation linéaire</a></li>
-              <li><span>&bull;</span><a href="#">Probabilités Statistique</a></li>
-            </ul>
-          </div>
-        </div>
-        </div>
-      </div>
-    </section>
-    <section class="contribution">
-      <h1>Contribution</h1>
-      <p>Nous envisagons un systéme pour vous donner la chance de contribué au dévelopement du site et l'ajout de contenu.</p>
-      <ul class="fa-text">
-        <li><span style="font-size: 25px; color: Dodgerblue;">
-                        <i class="fas fa-upload"></i>
-            </span>
-        </li>
-        <li><h2>Upload a file</h2></li>
-      </ul>
-      <div class="contribution-box">
-        <img src="img/file.png" alt="" width="80px" height="80px">
-      </div>
-      <a href="#">Choisir un fichier</a>
-    </section>
-    <section class="contact-us">
-      <h1>Contact-us</h1>
-      <div class="row-2">
-        <div class="contact-us-info">
-          <ul>
-            <li> <span id="cross">&cross;</span> </li>
-            <li><p>On cas de problémes ou d'erreur lors de votre visite au site veuillez nous contacter.</p></li>
-          </ul>
-          <ul>
-            <li> <span id="checkmark">&checkmark;</span> </li>
-            <li><p>Nous contacter pour des renseignement</p></li>
-          </ul>
-        </div>
-        <div class="contact-form">
-          <form class="box" action="index.html" method="post">
-            <input type="text" name="" value="Nom">
-            <input type="email" name="" value="e-mail">
-            <textarea name="name" rows="8" cols="32">message</textarea>
-            <input type="submit" name="" value="Send message">
-          </form>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <div class="footer-icons">
+    </div>
+  </header>
+  <section class="about-us">
+    <h1>Tamusni c'est qoui ?</h1>
+    <p>Une plate-forme qui contients des cours, examens,
+      exercices TD et TP pour les étudiant du département informatique de l'univérsité Mouloud MAMMERI Tizi-ouzou</p>
+  </section>
+  <section class="license">
+    <h1>License1</h1>
+    <div class="row-2">
+      <div class="semestre-x semestre-l">
+        <a href="#">
+          <h2>Semestre 1</h2>
+        </a>
         <ul>
-          <li><a href="#"><span style="font-size: 30px; color: #fabd2a;">
-                          <i class="fab fa-facebook-square"></i></a>
-              </span></li>
-          <li><a href="#"><span style="font-size: 30px; color: #fabd2a;">
-                          <i class="fab fa-instagram-square"></i></a>
-              </span></li>
-          <li><a href="#"><span style="font-size: 30px; color: #fabd2a;">
-                          <i class="fab fa-github-square"></i></a>
-              </span></li>
+          <li><span>&bull;</span><a href="#">Analyse 1</a></li>
+          <li><span>&bull;</span><a href="#">Algébre 1</a></li>
+          <li><span>&bull;</span><a href="#">Algorithmique et structure des données 1</a></li>
+          <li><span>&bull;</span><a href="#">Structure Machine 1</a></li>
+          <li><span>&bull;</span><a href="#">ECS</a></li>
+          <li><span>&bull;</span><a href="#">Langue Étrangére 1</a></li>
+          <li><span>&bull;</span><a href="#">Francais</a></li>
         </ul>
       </div>
-      <div class="Copyright">
-        <p>Copyright © 2021 Étudiants Mouloud Mammeri Tizi-ouzou. All right reserved.</p>
+      <div class="semestre-x semestre-r">
+        <a href="#">
+          <h2>Semestre 2</h2>
+        </a>
+        <ul>
+          <li><span>&bull;</span><a href="#">Analyse 2</a></li>
+          <li><span>&bull;</span><a href="#">Algébre 2</a></li>
+          <li><span>&bull;</span><a href="#">Algorithmique et structure des données 2</a></li>
+          <li><span>&bull;</span><a href="#">Structure Machine 2</a></li>
+          <li><span>&bull;</span><a href="#">Probabilité et Statistique</a></li>
+          <li><span>&bull;</span><a href="#">Outils de programmation Mathématique</a></li>
+          <li><span>&bull;</span><a href="#">TIC</a></li>
+        </ul>
       </div>
-    </footer>
-    <script src="js/swiper.js"></script>
-    <script src="js/swiper.min.js"></script>
-    <script src="js/script.js"></script>
-    <script src="js/script2.js"></script>
-    <script src="js/main.js"></script>
+    </div>
+  </section>
+  <section class="license">
+    <h1>License 2</h1>
+    <div class="row-2">
+      <div class="semestre-x semestre-l">
+        <a href="#">
+          <h2>Semestre 3</h2>
+        </a>
+        <ul>
+          <li><span>&bull;</span><a href="#">Algorithmique et structure des données</a></li>
+          <li><span>&bull;</span><a href="#">Architecture des ordinateurs</a></li>
+          <li><span>&bull;</span><a href="#">Systéme d'information</a></li>
+          <li><span>&bull;</span><a href="#">Théorie des graphes</a></li>
+          <li><span>&bull;</span><a href="#">Méthodes Numériques</a></li>
+          <li><span>&bull;</span><a href="#">Logique Mathématique</a></li>
+          <li><span>&bull;</span><a href="#">Langue Étrangére 2</a></li>
+        </ul>
+      </div>
+      <div class="semestre-x semestre-r">
+        <a href="#">
+          <h2>Semestre 4 </h2>
+        </a>
+        <ul>
+          <li><span>&bull;</span><a href="#">Théorie des languages</a></li>
+          <li><span>&bull;</span><a href="#">Systéme d'éxploitation 1</a></li>
+          <li><span>&bull;</span><a href="#">Base de données</a></li>
+          <li><span>&bull;</span><a href="#">Réseaux</a></li>
+          <li><span>&bull;</span><a href="#">Programmation orienté objet</a></li>
+          <li><span>&bull;</span><a href="#">Dévelopement d'Application Web</a></li>
+          <li><span>&bull;</span><a href="#">Langue Étrangére 3</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="license">
+    <h1>License 3</h1>
+    <div class="row-2">
+      <div class="semestre-x semestre-l">
+        <a href="#">
+          <h2>Semestre 5</h2>
+        </a>
+        <ul>
+          <li><span>&bull;</span><a href="#">Systéme d'éxploitation 2</a></li>
+          <li><span>&bull;</span><a href="#">Compilation</a></li>
+          <li><span>&bull;</span><a href="#">Génie logiciel</a></li>
+          <li><span>&bull;</span><a href="#">Interface Homme-Machine</a></li>
+          <li><span>&bull;</span><a href="#">Économie numérique et veille stratégique</a></li>
+          <li><span>&bull;</span><a href="#">Programmation linéaire</a></li>
+          <li><span>&bull;</span><a href="#">Probabilités Statistique</a></li>
+        </ul>
+      </div>
+      <div class="semestre-x semestre-r">
+        <a href="#">
+          <h2>Semestre 6</h2>
+        </a>
+        <ul>
+          <li><span>&bull;</span><a href="#">Application Mobile</a></li>
+          <li><span>&bull;</span><a href="#">Sécurité informatique</a></li>
+          <li><span>&bull;</span><a href="#">Intelligence artificielle</a></li>
+          <li><span>&bull;</span><a href="#">Domaine semi-structurées</a></li>
+          <li><span>&bull;</span><a href="#">Projet</a></li>
+          <li><span>&bull;</span><a href="#">Rédaction scientifique</a></li>
+          <li><span>&bull;</span><a href="#">Créer et développer une startup</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="master-t">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
 
-  </body>
+        <div class="swiper-slide">
+          <div class="container semestre-l" id="Master1">
+            <h1>Master 1</h1>
+            <div class="semestre-t active">
+              <h2>Semestre 1</h2>
+              <ul>
+                <li><span>&bull;</span><a href="#">Systéme d'éxploitation 2</a></li>
+                <li><span>&bull;</span><a href="#">Compilation</a></li>
+                <li><span>&bull;</span><a href="#">Génie logiciel</a></li>
+                <li><span>&bull;</span><a href="#">Interface Homme-Machine</a></li>
+                <li><span>&bull;</span><a href="#">Économie numérique et veille stratégique</a></li>
+                <li><span>&bull;</span><a href="#">Programmation linéaire</a></li>
+                <li><span>&bull;</span><a href="#">Probabilités Statistique</a></li>
+              </ul>
+            </div>
+            <div class="semestre-t">
+              <h2>Semestre 3</h2>
+              <ul>
+                <li><span>&bull;</span><a href="#">Systéme d'éxploitation 2</a></li>
+                <li><span>&bull;</span><a href="#">Compilation</a></li>
+                <li><span>&bull;</span><a href="#">Génie logiciel</a></li>
+                <li><span>&bull;</span><a href="#">Interface Homme-Machine</a></li>
+                <li><span>&bull;</span><a href="#">Économie numérique et veille stratégique</a></li>
+                <li><span>&bull;</span><a href="#">Programmation linéaire</a></li>
+                <li><span>&bull;</span><a href="#">Probabilités Statistique</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="container semestre-l" id="Master1">
+            <h1>Master 1</h1>
+            <div class="semestre-t active">
+              <h2>Semestre 1</h2>
+              <ul>
+                <li><span>&bull;</span><a href="#">Systéme d'éxploitation 2</a></li>
+                <li><span>&bull;</span><a href="#">Compilation</a></li>
+                <li><span>&bull;</span><a href="#">Génie logiciel</a></li>
+                <li><span>&bull;</span><a href="#">Interface Homme-Machine</a></li>
+                <li><span>&bull;</span><a href="#">Économie numérique et veille stratégique</a></li>
+                <li><span>&bull;</span><a href="#">Programmation linéaire</a></li>
+                <li><span>&bull;</span><a href="#">Probabilités Statistique</a></li>
+              </ul>
+            </div>
+            <div class="semestre-t">
+              <h2>Semestre 3</h2>
+              <ul>
+                <li><span>&bull;</span><a href="#">Systéme d'éxploitation 2</a></li>
+                <li><span>&bull;</span><a href="#">Compilation</a></li>
+                <li><span>&bull;</span><a href="#">Génie logiciel</a></li>
+                <li><span>&bull;</span><a href="#">Interface Homme-Machine</a></li>
+                <li><span>&bull;</span><a href="#">Économie numérique et veille stratégique</a></li>
+                <li><span>&bull;</span><a href="#">Programmation linéaire</a></li>
+                <li><span>&bull;</span><a href="#">Probabilités Statistique</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+    </div>
+    </div>
+  </section>
+  
+  <section class="contribution">
+    <h1>Contribution</h1>
+    <p>Nous envisagons un systéme pour vous donner la chance de contribué au dévelopement du site et l'ajout de contenu.
+    </p>
+    <ul class="fa-text">
+      <li><span style="font-size: 25px; color: Dodgerblue;">
+          <i class="fas fa-upload"></i>
+        </span>
+      </li>
+      <li>
+        <h2>Upload a file</h2>
+      </li>
+    </ul>
+    <div class="contribution-box">
+      <img src="img/file.png" alt="" width="80px" height="80px">
+    </div>
+    <a href="#">Choisir un fichier</a>
+  </section>
+  <section class="contact-us">
+    <h1>Contact-us</h1>
+    <div class="row-2">
+      <div class="contact-us-info">
+        <ul>
+          <li> <span id="cross">&cross;</span> </li>
+          <li>
+            <p>On cas de problémes ou d'erreur lors de votre visite au site veuillez nous contacter.</p>
+          </li>
+        </ul>
+        <ul>
+          <li> <span id="checkmark">&checkmark;</span> </li>
+          <li>
+            <p>Nous contacter pour des renseignement</p>
+          </li>
+        </ul>
+      </div>
+      <div class="contact-form">
+        <form class="box" action="index.html" method="post">
+          <input type="text" name="" value="Nom">
+          <input type="email" name="" value="e-mail">
+          <textarea name="name" rows="8" cols="32">message</textarea>
+          <input type="submit" name="" value="Send message">
+        </form>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="footer-icons">
+      <ul>
+        <li><a href="#"><span style="font-size: 30px; color: #fabd2a;">
+              <i class="fab fa-facebook-square"></i></a>
+          </span></li>
+        <li><a href="#"><span style="font-size: 30px; color: #fabd2a;">
+              <i class="fab fa-instagram-square"></i></a>
+          </span></li>
+        <li><a href="#"><span style="font-size: 30px; color: #fabd2a;">
+              <i class="fab fa-github-square"></i></a>
+          </span></li>
+      </ul>
+    </div>
+    <div class="Copyright">
+      <p>Copyright © 2021 Étudiants Mouloud Mammeri Tizi-ouzou. All right reserved.</p>
+    </div>
+  </footer>
+  <script src="js/swiper.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/script2.js"></script>
+  <script src="js/main.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+</body>
+
 </html>
