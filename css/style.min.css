@@ -5,6 +5,9 @@
 h2,p,h1,a{
   font-family: 'Nunito', sans-serif;
 }
+ul{
+  list-style: none;
+}
 a{
   color: #141414;
   text-decoration: none;
@@ -33,11 +36,11 @@ header{
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 100vw;
   height: 60px;
   margin: auto;
-  transition: 0.6s;
-
+  transition: 1s;
+  overflow-x: hidden;
 }
 .nav-bar .logo a{
   color : #FABD3A;
@@ -118,6 +121,7 @@ header{
   width: 90%;
   margin: auto;
   align-items: center;
+  padding-top: 80px;
 }
 .header-info{
   width: 100%;
@@ -199,6 +203,7 @@ header{
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  overflow-x: hidden;
 }
 .license h1{
   font-family: Helvetica;

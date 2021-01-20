@@ -7,7 +7,8 @@ h2,p,h1,a{
 }
 header{
   background-color : #141414;
-  height : 100vh;
+  height : auto;
+  padding-bottom: 200px;
 }
 ul{
   list-style: none;
@@ -16,7 +17,7 @@ li{
   display: inline-block;
 }
 .nav-bar{
-  padding : 0.8cm;
+  padding: 20px;
 }
 
 .nav-bar{
@@ -24,13 +25,12 @@ li{
   z-index: 4000;
   background-color: #141414;
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
   align-items: center;
   width: 100%;
   height: 30px;
-  margin: auto;
   transition: 0.6s;
+  overflow-x: hidden;
 }
 .hamburger{
   display: none;
@@ -46,7 +46,7 @@ a{
   text-align: center;
 }
 .nav-bar-menu ul a{
-  font-size: 18px;
+  font-size: 15px;
 }
 .nav-bar-menu ul a:active,
 .nav-bar-menu ul a:hover{
@@ -77,7 +77,8 @@ a{
 }
 .row{
   display : grid;
-  grid-template-columns : 50% 50%;
+  grid-template-columns: 50% 50%;
+  align-items: center;
   padding-top: 100px;
 }
 .header-info{
@@ -146,6 +147,8 @@ a{
 .license{
   background-color: #141414;
   height: 580px;
+  overflow-x: hidden;
+  width: 100%;
 }
 .license h1{
   font-family: Helvetica;
