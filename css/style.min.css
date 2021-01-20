@@ -25,6 +25,7 @@ header{
 }
 .nav-bar{
   display: flex;
+  position:fixed;
 }
 .hamburger{
   margin-left: auto;
@@ -147,7 +148,7 @@ header{
   text-align: center;
   letter-spacing: 1px;
   padding:0 40px;
-  color:
+
 }
 
 /*-----------------------------------------------*/

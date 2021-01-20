@@ -3,6 +3,9 @@
   padding : 0;
   overflow-x: hidden;
 }
+h2,p,h1,a{
+  font-family: 'Nunito', sans-serif;
+}
 header{
   background-color : #141414;
   height : 100vh;
@@ -16,12 +19,25 @@ li{
 .nav-bar{
   padding : 0.8cm;
 }
+
 .nav-bar{
-  display: grid;
-  grid-template-columns: 40% 60%;
+  position: fixed;
+  z-index: 4000;
+  background-color: #141414;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  margin: auto;
+  transition: 0.6s;
+
 }
 .hamburger{
   display: none;
+  position: fixed;
 }
 a{
   font-size : 14px;
@@ -29,11 +45,14 @@ a{
   text-decoration: none;
   margin-left: 10px;
 }
-.nav-bar-menu{
+.nav-bar-menu ul{
   text-align: center;
 }
-.nav-bar-menu a:active,
-.nav-bar-menu a:hover{
+.nav-bar-menu ul a{
+  font-size: 18px;
+}
+.nav-bar-menu ul a:active,
+.nav-bar-menu ul a:hover{
   color: #fabd2a;
   font-size: bold;
   border-bottom: 1px solid #fabd2a;
@@ -46,13 +65,20 @@ a{
   padding: 5px;
   margin-bottom: 8px;
 }
-.nav-bar h2{
+.nav-bar .logo a{
   color : #FABD3A;
+  font-size: 30px;
   padding : 8px;
+
+}
+.nav-bar.stikky{
+  height: 45px;
+  background-color: #fabd1a;
 }
 .row{
   display : grid;
   grid-template-columns : 50% 50%;
+  padding-top: 100px;
   margin-top : 2cm;
 }
 .header-info{
@@ -114,7 +140,7 @@ a{
   text-align: center;
   letter-spacing: 1px;
   padding:0 40px;
-  color:
+
 }
 
 /*-----------------------------------------------*/
