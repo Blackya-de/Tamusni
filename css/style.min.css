@@ -458,6 +458,13 @@ footer p{
   font-size: 38px;
   letter-spacing: 1px;
 }
+#master-spécialité{
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 30px;
+  font-weight: 200;
+  margin-bottom: 5px;
+}
 .container{
   height: 500px;
   display: flex;
@@ -492,4 +499,9 @@ footer p{
 }
 .semestre-t a{
   color: #fff;
+}
+@media all and (max-width:450px) {
+  .master-t li{
+    text-align: center;
+  }
 }
