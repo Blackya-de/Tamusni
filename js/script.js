@@ -27,10 +27,10 @@ function checkBoxes() {
   boxes.forEach(box => {
     const boxTop = box.getBoundingClientRect().top
 
-    if(boxTop < triggerBottom) {
-        box.classList.add('show')
+    if (boxTop < triggerBottom) {
+      box.classList.add('show')
     } else {
-        box.classList.remove('show')
+      box.classList.remove('show')
     }
   })
 }
@@ -40,7 +40,7 @@ const hamburger = document.querySelector('.hamburger');
 const nav_bar_menu = document.querySelector('.nav-bar-menu');
 const lines = document.querySelectorAll('.line');
 
-hamburger.addEventListener('click', ()=>{
+hamburger.addEventListener('click', () => {
   nav_bar_menu.classList.toggle("open");
   lines.forEach(line => {
     line.classList.toggle("open");
@@ -48,7 +48,7 @@ hamburger.addEventListener('click', ()=>{
 })
 
 
-/*-----------------------------swiper*/
+/*-----------------------------swiper-initialized-------------------------*/
 var mySwiper = new Swiper('.swiper-container', {
 
 
@@ -60,3 +60,52 @@ var mySwiper = new Swiper('.swiper-container', {
 
 
 })
+
+
+/*---------------------------------- JQuery nav links to scroll down ----------------------------------*/
+$('.js--scroll-to-contribution').click(function () {
+  $('html, body').animate({ scrollTop: $('.contribution').offset().top }, 1000);
+})
+
+
+$('a[href*="#"]')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function (event) {
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+      &&
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000, function () {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
+            $target.focus(); // Set focus again
+          };
+        });
+      }
+    }
+  });
+
+
+
+
+
+
