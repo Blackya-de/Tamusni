@@ -161,6 +161,7 @@ a{
 .row-2{
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 .semestre-r{
   display: flex;
@@ -213,6 +214,7 @@ a{
 .semestre-x li{
   color: #fff;
   display: list-item;
+  padding: 4px;
 }
 span{
   color: #fabd2a;
@@ -414,7 +416,7 @@ footer p{
   flex-grow: 100000;
 }
 .semestre-t ul{
-  padding:3cm;
+  padding: 2cm;
   width: 320px;
   background-color: #191919;
   position: sticky;
@@ -423,6 +425,7 @@ footer p{
 .semestre-t li{
   color: #fff;
   display: list-item;
+  padding: 3px;
 }
 .semestre-t h2{
   text-align: center;

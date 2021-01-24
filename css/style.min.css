@@ -257,6 +257,7 @@ header{
 .semestre-x li{
   color: #fff;
   display: list-item;
+  padding: 4px;
 }
 span{
   color: #fabd2a;
