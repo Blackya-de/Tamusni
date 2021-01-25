@@ -47,13 +47,21 @@ a{
 }
 .nav-bar-menu ul a{
   font-size: 15px;
+  display: inline-block;
 }
-.nav-bar-menu ul a:active,
-.nav-bar-menu ul a:hover{
-  color: #fabd2a;
-  font-size: bold;
-  border-bottom: 1px solid #fabd2a;
+.nav-bar-menu ul a::after{
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #fabd1a;
+  transition: width .3s;
 }
+.nav-bar-menu ul a:hover::after{
+  width: 100%;
+  transition: width .3s;
+}
+
 #text-2{
   font-size: 25px;
   letter-spacing: 4px;
@@ -75,11 +83,24 @@ a{
 .nav-bar.stikky a{
   color: #141414;
 }
+.nav-bar.stikky li a::after{
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #202020;
+  transition: width .3s;
+}
+.nav-bar.stikky a:hover::after{
+  width: 100%;
+  transition: width .3s;
+}
 .row{
   display : grid;
   grid-template-columns: 50% 50%;
+  margin: auto;
   align-items: center;
-  padding-top: 100px;
+  padding-top: 150px;
 }
 .header-info{
   padding : 1cm;
